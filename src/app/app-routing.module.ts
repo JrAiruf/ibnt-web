@@ -5,6 +5,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { LoginComponent } from './modules/auth/login/login.component';
 
 const routes: Routes = [
+  { path: "", redirectTo: "/auth", pathMatch: 'full' },
   {
     path: "auth", component: AuthComponent,
     children: [
