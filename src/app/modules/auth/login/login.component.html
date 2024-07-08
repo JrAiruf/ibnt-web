@@ -1,0 +1,35 @@
+<!-- {{loginEntity | json}} -->
+
+<div id="login-container">
+    <div class="logo">
+        <img class="logo-img" src="assets/ibnt_logo.png"
+            alt="Logo da Igreja Batista Nacional Em Turmalina">
+        <div class="logo-sub-column">
+            <div class="logo-sub-row">
+                <p><strong>I</strong>GREJA &nbsp;</p>
+                <p><strong>B</strong>ATISTA &nbsp;</p>
+            </div>
+            <div class="logo-sub-row-1">
+                <p><strong>N</strong>ACIONAL EM &nbsp;</p>
+                <p><strong>T</strong>URMALINA &nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <form class="app-form">
+
+        <label class="t-small app-label">E-mail</label>
+        <input class="app-form-input" type="email" required
+            [(ngModel)]="loginEntity.email" name="email">
+
+        <label class="t-small app-label">Senha</label>
+        <input class="app-form-input" type="password" required
+            [(ngModel)]="loginEntity.password" name="password">
+
+        <a class="recovery-act t-small sub-action" href>Esqueci minha senha</a>
+
+        <button class="app-btn" (click)="onSubmit()">Entrar</button>
+
+        <a class="create-act sub-action" href>Criar Conta</a>
+
+    </form>
+</div>
