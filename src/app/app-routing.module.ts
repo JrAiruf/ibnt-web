@@ -9,7 +9,9 @@ const routes: Routes = [
   {
     path: "auth", component: AuthComponent,
     children: [
-      { path: "", component: LoginComponent }
+      {
+        path: "", component: LoginComponent, data: {}
+      }
     ]
   },
   { path: "home", component: HomeComponent },
